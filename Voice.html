@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Voice Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <h1>Order Voice Services</h1>
+        <p>Type your script and choose your voice style!</p>
+        <a href="index.html" class="btn">Back to Home</a>
+    </header>
+
+    <section class="form-section">
+        <h2>Submit Your Order</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            
+            <label for="script">Your Script or Instructions:</label>
+            <textarea id="script" name="script" required></textarea>
+            
+            <label for="voice">Voice Style (e.g., male, female, tone):</label>
+            <input type="text" id="voice" name="voice" required>
+            
+            <label for="file">Upload Audio (if any):</label>
+            <input type="file" id="file" name="file" accept="audio/*">
+            
+            <input type="hidden" name="_subject" value="New Voice Service Order">
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us: <a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
+        <p>&copy; 2025 Custom Editing Studio</p>
+    </footer>
+</body>
+</html>
